@@ -393,7 +393,7 @@ text-align:center !important;
 
 .skills__desc{
   width:100%;
-  height:170px;
+  height:190px;
   background-color: #776d6d27;
   border-radius: 20px;
   display: block;
@@ -401,7 +401,8 @@ text-align:center !important;
   padding:20px;
   text-align: start;
   align-items: start;
-margin-top:20px
+margin-top:20px;
+overflow: auto;
 }
 
 .skills__desc p h2{
