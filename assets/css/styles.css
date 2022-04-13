@@ -123,7 +123,7 @@ img {
 /*===== NAV =====*/
 
 header {
-  background-color:var(--second-color) !important
+  background-color: var(--second-color) !important
 }
 
 .nav {
@@ -135,7 +135,7 @@ header {
 }
 
 .nav a {
-  color:var(--first-color)
+  color: var(--first-color)
 }
 
 .nav_logo {
@@ -255,31 +255,32 @@ header {
   right: 0;
   bottom: 0;
   width: 260px;
-  
+
 }
 
 @media screen and (max-width:579px) {
-  .home__img{
-    display:none
+  .home__img {
+    display: none
   }
 
-  .home{
-    display:flex;
+  .home {
+    display: flex;
     justify-content: space-between;
   }
 
-  .home__social{
+  .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: column;
     align-self: flex-end;
   }
-.skills__names{
-  margin-left:20px;
-text-align:center !important;
 
-}
- 
+  .skills__names {
+    margin-left: 20px;
+    text-align: center !important;
+
+  }
+
 }
 
 .home__blob {
@@ -355,13 +356,13 @@ text-align:center !important;
   flex-wrap: wrap;
 }
 
-.skills__names{
+.skills__names {
   align-items: center;
   font-weight: var(--font-semi);
   width: 150px;
-  margin-top:20px;
-  margin-right:20px;
-  margin-bottom:20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   /* padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
@@ -382,35 +383,245 @@ text-align:center !important;
 }
 
 
-.skills__main-desc{
-  height:100%;
-  width:100%;
+.skills__main-desc {
+  height: 100%;
+  width: 100%;
   display: block;
   justify-content: center;
-  
+
 }
 
 
-.skills__desc{
-  width:100%;
-  height:190px;
+.skills__desc {
+  width: 100%;
+  height: 190px;
   background-color: #776d6d27;
   border-radius: 20px;
   display: block;
   justify-content: space-evenly;
-  padding:20px;
+  padding: 20px;
   text-align: start;
   align-items: start;
-margin-top:20px;
-overflow: auto;
+  margin-top: 20px;
+  overflow: auto;
 }
 
-.skills__desc p h2{
+.skills__desc p h2 {
 
   text-align: start;
-  
+
 
 }
+
+/* ====Skills==== */
+
+
+/* ====Mentorship==== */
+
+.mentor__container {
+  row-gap: 2rem;
+  column-gap: 2rem;
+  justify-content: center;
+  padding-left: 399px;
+  padding-right: 399px
+}
+
+/* .mentor__container {
+  row-gap: 2rem;
+  justify-content: center;
+
+}
+
+.poster {
+  border-radius: .5rem;
+  width: 350px;
+
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  transition: width .5s;
+}
+
+/* .poster:hover {
+  width: 1000px;
+} */
+.container {
+  padding-left: 4%;
+  padding-right: 4%;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+  padding-left: 3%;
+  padding-right: 3%
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  color: black;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.card .profile {
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.card:hover .profile {
+  transform: scale(1.4);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.card .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .content .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1e6;
+  transition: 1s;
+
+  z-index: 1;
+  padding: 10px;
+}
+
+.from-left {
+  top: 0;
+  left: -100%;
+}
+
+.card:hover .content .from-left {
+  left: 0%;
+}
+
+.from-bottom {
+  top: 100%;
+  left: 0;
+}
+
+.card:hover .content .from-bottom {
+  top: 0%;
+}
+
+.from-right {
+  top: 0%;
+  right: -100%;
+}
+
+.card:hover .content .from-right {
+  right: 0;
+}
+
+.card .content .back h3 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+.card .content .back .tem-img {
+  border-radius: 100%;
+}
+
+.card .content .back .des {
+  font-size: 13px;
+  padding: 20px 0px;
+}
+
+.card .content .back .social-icon {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card .content .back .social-icon li {
+  display: inline-block;
+}
+
+.card .content .back .social-icon li a {
+  display: block;
+  background: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+}
+
+
+.poster-img {
+  height: 100%;
+  position: absolute;
+  width: 350px;
+  left: 0px;
+  top: 0px;
+  background-color: #9b3d3d;
+}
+
+.desc {
+  height: 100%;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  width: 650px;
+  opacity: 0;
+  background-color: #3a6d90;
+  transition: opacity .5s;
+  z-index: -1;
+}
+
+.poster:hover .desc {
+  opacity: 1;
+}
+
+
+
 
 /* ===== WORK =====*/
 .work__container {
@@ -424,7 +635,7 @@ overflow: auto;
   border: 3.5px solid var(--first-color);
   justify-content: center;
   align-items: center;
-  text-align:center;
+  text-align: center;
 
 
 }
@@ -440,7 +651,27 @@ overflow: auto;
 
 
 
+.desc {
+  background: green;
+  overflow: hidden;
+  text-align: center;
+}
 
+.desc .content {
+  background: rgba(0, 0, 0, 0.9);
+  bottom: -100%;
+  color: #fff;
+
+  left: 0%;
+  text-align: center;
+  position: absolute;
+  transition: bottom 0.5s ease;
+
+}
+
+.desc:hover .content {
+  bottom: 0%;
+}
 
 .button-work {
   display: inline-block;
@@ -448,16 +679,14 @@ overflow: auto;
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius:0.6rem;
+  border-radius: 0.6rem;
   transition: .3s;
   align-self: center;
   text-align: center;
   margin-top: 20px;
   justify-content: center;
   width: 95%;
-  margin-bottom:20px
- 
-
+  margin-bottom: 20px
 }
 
 /* ===== CONTACT =====*/
@@ -540,7 +769,7 @@ overflow: auto;
   .home__img {
     width: 300px;
     bottom: 25%;
-    
+
   }
 
   .about__container {
@@ -556,6 +785,12 @@ overflow: auto;
   }
 
   .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .mentor__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
@@ -640,12 +875,31 @@ overflow: auto;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
+
+  .container {
+    padding-left: 0%;
+    padding-right: 0%;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
 }
 
 @media screen and (min-width: 1239.5px) {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .container {
+    padding-left: 18%;
+    padding-right: 18%;
+    justify-content: center;
+    align-items: center;
+
+
   }
 
   .home {
