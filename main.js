@@ -60,8 +60,6 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 sr.reveal(".home__social-icon", { interval: 200 });
 sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 
-
-
 /*===== TYPING ANIMATION =====*/
 
 const typedTextSpan = document.querySelector(".typed-text");
@@ -109,4 +107,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
-
