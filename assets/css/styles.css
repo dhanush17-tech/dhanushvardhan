@@ -418,33 +418,8 @@ header {
 
 /* ====Mentorship==== */
 
-.mentor__container {
-  row-gap: 2rem;
-  column-gap: 2rem;
-  justify-content: center;
-  padding-left: 399px;
-  padding-right: 399px
-}
 
-/* .mentor__container {
-  row-gap: 2rem;
-  justify-content: center;
 
-}
-
-.poster {
-  border-radius: .5rem;
-  width: 350px;
-
-  height: 350px;
-  position: relative;
-  overflow: hidden;
-  transition: width .5s;
-}
-
-/* .poster:hover {
-  width: 1000px;
-} */
 .container {
   padding-left: 4%;
   padding-right: 4%;
@@ -561,7 +536,7 @@ header {
   font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 0px;
-  color:var(--first-color);
+  color: var(--first-color);
 
 }
 
@@ -793,7 +768,7 @@ header {
   .card .content .back .des {
     font-size: 12px;
     padding: 5px 0px;
-    overflow:auto
+    overflow: auto
   }
 
 }
@@ -902,3 +877,12 @@ header {
     width: 450px;
   }
 }
+
+
+
+
+
+
+
+
+
